@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --accent-color: #1DB954;
+
+  --bg-card: #191414;
+
+  --card-brown: #A27F61;
+  --card-gray: #535353;
+  --card-blue: #4070B8;
+  --card-magenta: #D03860;
+  --card-skyblue: #247BC4;
+
+  font-size: 1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins';
+  font-size: 16rem;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 5vh;
+
+  background-color: var(--accent-color);
+
+  transition: background-color 0.5s ease;
+}
+
+body::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+}
+
+.gallery {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+  column-gap: 10px;
+}
+
+.head-column {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  transition: all 0.3s;
+}
+
+.head-column:hover {
+  transform: scale(1.03);
+}
+
+.head-column::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  border-radius: 10px;
+  background-color: var(--bg-card);
+  opacity: 0.9;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
+
+  transition: all 0.3s;
+}
+
+.head-column:hover::before {
+  opacity: 1;
+}
+
+.w2e-logo {
+  width: 70%;
+  aspect-ratio: 1/1;
+  margin: 0 0 10px 0;
+
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
+}
+
+.head-column h1 {
+  width: 80%;
+  margin: 0 0 40px 0;
+
+  text-align: center;
+  font-size: 36rem;
+}
+
+.head-column p {
+  width: 80%;
+
+  text-align: center;
+  margin: 0 0 80px 0;
+}
+
+.socials-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.socials-wrapper a {
+  height: 32px;
+  width: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-wrapper a svg {
+  fill: white;
+
+  transition: all 0.3s;
+}
+
+.socials-wrapper a svg:hover {
+  fill: var(--accent-color);
+}
+
+.item-column {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 10px;
+}
+
+/* ========== ========== AUDIO CARDS ========== ========== */
+.audio-card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 170px 1fr;
+
+  transition: all 0.3s;
+}
+
+.audio-card:hover {
+  transform: scale(1.02);
+}
+
+.audio-card::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  border-radius: 10px;
+  opacity: 0.9;
+
+  transition: all 0.3s;
+}
+
+/* ========== Card Colors ========== */
+.audio-card#card-brown::before {
+  background-color: var(--card-brown);
+}
+.audio-card#card-gray::before {
+  background-color: var(--card-gray);
+}
+.audio-card#card-blue::before {
+  background-color: var(--card-blue);
+}
+.audio-card#card-magenta::before {
+  background-color: var(--card-magenta);
+}
+.audio-card#card-skyblue::before {
+  background-color: var(--card-skyblue);
+}
+
+.audio-card:hover::before {
+  opacity: 1;
+}
+
+.image-wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper img {
+  width: 100%;
+  aspect-ratio: 1/1;
+
+  border-radius: 5px;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
+}
+
+.preview-wrapper {
+  height: 100%;
+  width: (100% + 10px);
+  margin: 0 0 0 -10px;
+  padding: 30px 30px 30px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preview-wrapper h1 {
+  margin: 0 0 -5px 0;
+
+  font-size: 28px
+}
+
+.preview-wrapper p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.play-button {
+  position: absolute;
+  right: 40px;
+  padding: 10px;
+  width: 45px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+
+  border-radius: 100%;
+  border: none;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.1));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-wrapper {
+  width: 16px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== Play Colors ========== */
+.audio-card#card-brown svg {
+  fill: var(--card-brown);
+}
+.audio-card#card-gray svg {
+  fill: var(--card-gray);
+}
+.audio-card#card-blue svg {
+  fill: var(--card-blue);
+}
+.audio-card#card-magenta svg {
+  fill: var(--card-magenta);
+}
+.audio-card#card-skyblue svg {
+  fill: var(--card-skyblue);
+}
