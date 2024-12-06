@@ -1,5 +1,250 @@
 body {
+  position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+
+  background-color: #000000;
+}
+
+.background-wrapper {
+  position: absolute;
+  inset: -70px;
+  z-index: 1;
+
+  transform: rotate(4deg);
+}
+
+.background-1 {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.background-1 .bg-card {
+  width: 100%;
+  height: 100%;
+
+  background-position: center;
+  background-size: 100% auto;
+  border-radius: 10px;
+}
+
+.background-1 .bg-card:nth-child(1) {
+  background-image: url(images/Anime/AttackOnTitan/s1.jpg);
+}
+.background-1 .bg-card:nth-child(2) {
+  background-image: url(images/Manga/bluelock.jpg);
+}
+.background-1 .bg-card:nth-child(3) {
+  background-image: url(images/Anime/Haikyuu/s1.jpg);
+}
+.background-1 .bg-card:nth-child(4) {
+  background-image: url(images/Manga/hellsparadise.jpg);
+}
+.background-1 .bg-card:nth-child(5) {
+  background-image: url(images/Anime/Horimiya/s1.jpg);
+}
+.background-1 .bg-card:nth-child(6) {
+  background-image: url(images/Manga/mystmightmayhem.jpg);
+}
+.background-1 .bg-card:nth-child(7) {
+  background-image: url(images/Anime/Hyouka/s1.jpg);
+}
+.background-1 .bg-card:nth-child(8) {
+  background-image: url(images/Manga/omniscientreadersviewpoint.jpg);
+}
+.background-1 .bg-card:nth-child(9) {
+  background-image: url(images/Anime/KaguyaSama/s1.jpg);
+}
+.background-1 .bg-card:nth-child(10) {
+  background-image: url(images/Manga/onepiece.jpg);
+}
+
+.background-2 {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.background-2 .bg-card {
+  width: 100%;
+  height: 100%;
+
+  background-position: center;
+  background-size: 100% auto;
+  border-radius: 10px;
+}
+
+.background-2 .bg-card:nth-child(1) {
+  background-image: url(images/Anime/KonoSuba/s1.jpg);
+}
+.background-2 .bg-card:nth-child(2) {
+  background-image: url(images/Manga/relife.jpg);
+}
+.background-2 .bg-card:nth-child(3) {
+  background-image: url(images/Anime/OnePunchMan/s1.jpg);
+}
+.background-2 .bg-card:nth-child(4) {
+  background-image: url(images/Manga/revengeofthebaskervillebloodhound.jpg);
+}
+.background-2 .bg-card:nth-child(5) {
+  background-image: url(images/Anime/OshiNoKo/s1.jpg);
+}
+.background-2 .bg-card:nth-child(6) {
+  background-image: url(images/Manga/sololeveling.jpg);
+}
+.background-2 .bg-card:nth-child(7) {
+  background-image: url(images/Anime/SpyxFamily/s1p1.jpg);
+}
+.background-2 .bg-card:nth-child(8) {
+  background-image: url(images/Manga/teenagemercenary.jpg);
+}
+.background-2 .bg-card:nth-child(9) {
+  background-image: url(images/Anime/Tensura/s1.jpg);
+}
+.background-2 .bg-card:nth-child(10) {
+  background-image: url(images/Manga/theknightonlylivestoday.jpg);
+}
+
+.background-2 .bg-card:nth-child(odd) {
+  opacity: 0;
+  animation: changeBackgroundOdd 20s infinite;
+}
+
+.background-2 .bg-card:nth-child(even) {
+  opacity: 1;
+  animation: changeBackgroundEven 20s infinite;
+}
+
+@keyframes changeBackgroundOdd {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes changeBackgroundEven {
+  25% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+}
+
+.background-3 {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+
+  background-color: #000000;
+  opacity: 0.85;
+}
+
+.content-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: 0 10vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.content-wrapper h1 {
+  width: 100%;
+
+  filter: drop-shadow(0 0 15px rgba(46, 81, 162, 0.3));
+
+  font-family: var(--heading_font);
+  font-size: 6.5rem;
+  text-align: right;
+  background: #2E51A2;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: title 5s infinite;
+}
+
+@keyframes title {
+  20% {
+    filter: drop-shadow(0 0 15px rgba(46, 81, 162, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 25px rgba(117, 154, 240, 0.8));
+  }
+  70% {
+    filter: drop-shadow(0 0 15px rgba(46, 81, 162, 0.3));
+  }
+}
+
+.content-wrapper p {
+  width: 100%;
+  padding: 0 0 0 30vw;
+  margin: 20px 0 30px 0;
+  
+  font-size: 1.5rem;
+  color: rgb(221, 221, 221);
+  text-align: right;
+  font-weight: 700;
+}
+
+
+
+.content-wrapper .explore {
+  padding: 10px 35px;
+  cursor: pointer;
+
+  border: 5px solid #2E51A2;
+  background-color: rgba(5, 6, 45, 0.7);
+  border-radius: 20px;
+
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+
+  transition: all 0.3s;
+}
+
+.content-wrapper .explore:hover {
+  background-color: #2E51A2;
+  filter: drop-shadow(0 0 10px rgba(46, 81, 162, 0.3));
+}
+
+.content-wrapper .explore:hover span {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
