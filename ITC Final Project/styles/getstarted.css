@@ -194,23 +194,14 @@ body {
   font-family: var(--heading_font);
   font-size: 6.5rem;
   text-align: right;
-  background: #2E51A2;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #2E51A2;
   animation: title 5s infinite;
 }
 
-@keyframes title {
-  20% {
-    filter: drop-shadow(0 0 15px rgba(46, 81, 162, 0.3));
-  }
-  50% {
-    filter: drop-shadow(0 0 25px rgba(117, 154, 240, 0.8));
-  }
-  70% {
-    filter: drop-shadow(0 0 15px rgba(46, 81, 162, 0.3));
-  }
+.content-wrapper h1 span {
+  filter: drop-shadow(0px 5px 0px rgb(22, 37, 76));
 }
+
 
 .content-wrapper p {
   width: 100%;
@@ -223,15 +214,15 @@ body {
   font-weight: 700;
 }
 
-
-
 .content-wrapper .explore {
+  position: relative;
   padding: 10px 35px;
+  margin: 0 0 5px 0;
   cursor: pointer;
 
-  border: 5px solid #2E51A2;
-  background-color: rgba(5, 6, 45, 0.7);
+  background-color: #2E51A2;
   border-radius: 20px;
+  filter: drop-shadow(0px 5px 0px rgb(22, 37, 76));
 
   font-size: 1.5rem;
   font-weight: 800;
@@ -240,11 +231,12 @@ body {
   transition: all 0.3s;
 }
 
-.content-wrapper .explore:hover {
-  background-color: #2E51A2;
-  filter: drop-shadow(0 0 10px rgba(46, 81, 162, 0.3));
+.content-wrapper .explore.explore:hover {
+  margin: 5px 0 0 0;
+
+  filter: drop-shadow(0px 0px 0px rgb(22, 37, 76));
 }
 
-.content-wrapper .explore:hover span {
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+.content-wrapper .explore.explore:hover span {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
 }
