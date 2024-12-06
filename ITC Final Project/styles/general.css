@@ -1,0 +1,14 @@
+:root {
+  --logo_font: 'AGRevueCyrRomanMedium', cursive;
+}
+
+h1 {
+  font-family: var(--logo_font);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
