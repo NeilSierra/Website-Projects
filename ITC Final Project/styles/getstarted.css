@@ -188,25 +188,22 @@ body {
 
 .content-wrapper h1 {
   width: 100%;
+  pointer-events: none;
 
-  filter: drop-shadow(0 0 15px rgba(46, 81, 162, 0.3));
+  filter: drop-shadow(0px 5px 0px rgb(22, 37, 76));
 
   font-family: var(--heading_font);
-  font-size: 6.5rem;
+  font-size: 7rem;
   text-align: right;
   color: #2E51A2;
   animation: title 5s infinite;
 }
 
-.content-wrapper h1 span {
-  filter: drop-shadow(0px 5px 0px rgb(22, 37, 76));
-}
-
-
 .content-wrapper p {
   width: 100%;
-  padding: 0 0 0 30vw;
+  padding: 0 0 0 20vw;
   margin: 20px 0 30px 0;
+  pointer-events: none;
   
   font-size: 1.5rem;
   color: rgb(221, 221, 221);
@@ -235,6 +232,10 @@ body {
   margin: 5px 0 0 0;
 
   filter: drop-shadow(0px 0px 0px rgb(22, 37, 76));
+}
+
+.content-wrapper .explore.explore span {
+  transition: all 0.3s;
 }
 
 .content-wrapper .explore.explore:hover span {
