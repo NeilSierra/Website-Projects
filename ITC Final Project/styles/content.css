@@ -1,0 +1,48 @@
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+}
+
+nav {
+  position: relative;
+  padding: 64px 16px 0 5vw;
+  overflow-y: scroll;
+
+  background-color: #161618;
+}
+
+nav::-webkit-scrollbar {
+  width: 10px;
+}
+
+nav::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+nav::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 4px; 
+}
+
+nav::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+nav header {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 64px;
+  padding: 0 16px 0 5vw;
+}
+
+section {
+  position: relative;
+  padding: 64px 5vw 0 32px;
+
+  background-color: #1B1B1F;
+}
