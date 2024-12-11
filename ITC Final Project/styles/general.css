@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @font-face {
   font-family: 'AGRevueCyrRomanMedium';
   src: url('fonts/AGRevueCyrRomanMedium/AGRevueCyrRomanMedium.woff2') format('woff2'),
@@ -6,26 +8,12 @@
        url('fonts/AGRevueCyrRomanMedium/AGRevueCyrRomanMedium.svg') format('svg');
 }
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('fonts/Roboto/RobotoDraft-Black.woff2') format('woff2'),
-       url('fonts/Roboto/RobotoDraft-Black.woff') format('woff'),
-       url('fonts/Roboto/RobotoDraft-Black.ttf') format('truetype'),
-       url('fonts/Roboto/RobotoDraft-Black.svg') format('svg');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('fonts/Poppins/Poppins.woff2') format('woff2'),
-       url('fonts/Poppins/Poppins.woff') format('woff'),
-       url('fonts/Poppins/Poppins.ttf') format('truetype'),
-       url('fonts/Poppins/Poppins.svg') format('svg');
-}
-
 :root {
   --logo_font: 'AGRevueCyrRomanMedium', cursive;
   --heading_font: 'Roboto', helvetica;
   --text_font: 'Poppins', sans-serif;
+
+  --accent-color: #2E51A2;
 
   font-size: 16px;
   color: #ffffff;
