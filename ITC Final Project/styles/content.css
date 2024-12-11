@@ -33,13 +33,6 @@ nav::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-nav header {
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 64px;
-  padding: 0 16px 0 5vw;
-}
-
 section {
   position: relative;
   padding: 64px 5vw 0 32px;
