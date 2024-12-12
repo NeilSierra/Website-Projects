@@ -155,15 +155,15 @@ body {
   transition: all 0.1s;
 }
 
+.navigation > .division > details[open] > summary,
+.navigation > .division > details[open] >  summary::after {
+  color: var(--text-main);
+}
+
 .navigation > .division > .hyperlink:hover,
 .navigation > .division > details >  summary:hover,
 .navigation > .division > details >  summary:hover::after,
 .navigation > .division > details > .container > .hyperlink:hover {
-  color: var(--accent-color);
-}
-
-.navigation > .division > details[open] > summary,
-.navigation > .division > details[open] >  summary::after {
   color: var(--accent-color);
 }
 
@@ -203,7 +203,7 @@ body {
   align-items: center;
 }
 
-.link-wrapper {
+.content > header > .link-wrapper {
   height: 60%;
 
   display: flex;
@@ -212,18 +212,18 @@ body {
   column-gap: 16px;
 }
 
-.link-wrapper a {
+.content > header > .link-wrapper > a {
   color: var(--text-sub);
   font-weight: 600;
 
   transition: all 0.3s;
 }
 
-.link-wrapper a:hover {
+.content > header > .link-wrapper > a:hover {
   color: var(--accent-color);
 }
 
-.theme-wrapper button {
+.content > header > .theme-wrapper > button {
   width: 32px;
   aspect-ratio: 1/1;
   cursor: pointer;
@@ -232,8 +232,8 @@ body {
   border: none;
 }
 
-.theme-wrapper,
-.socials-wrapper {
+.content > header > .theme-wrapper,
+.content > header > .socials-wrapper {
   height: 60%;
   padding: 0 0 0 16px;
   margin: 0 0 0 16px;
