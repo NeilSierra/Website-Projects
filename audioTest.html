@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio On Play</title>
+  </head>
+  <body>
+    <!--        Audio File     Audio Id-->
+    <audio src="audio.MP3" id="audioId"></audio>
+    <!--             Name of Function-->
+    <button onclick="functionNamePlay()">Play Music</button>
+    <!--             Name of Function-->
+    <button onclick="functionNameStop()">Stop Music</button>
+
+    <script>
+      //       Name of Function
+      function functionNamePlay() {
+        //    Name of Variable                    Id of Audio
+        const audioVar = document.getElementById('audioId');
+        audioVar.volume = 0.5; // Set Volume
+        audioVar.play() // Start Audio
+      }
+      //       Name of Function
+      function functionNameStop() {
+        //    Name of Variable                    Id of Audio
+        const audioVar = document.getElementById('audioId');
+        audioVar.pause(); // Stop Audio
+        audioVar.currentTime = 0 // Reset Audio
+      }
+    </script>
+  </body>
+</html>
