@@ -7,9 +7,9 @@
   position: relative;
   box-sizing: border-box;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  padding: 60px 0 0 0;
+  padding: 60px 0;
   overflow-x: hidden;
   background-color: #BBD2FB;
   display: flex;
@@ -27,6 +27,7 @@
     justify-content: center;
     align-items: center;
     column-gap: 16px;
+    z-index: 100;
     ">
       <a href="index.html" style="
       position: fixed;
@@ -80,7 +81,7 @@
       ">My Favorite Movies</a>
     </div>
     <h1 style="
-    margin: 0 0 16px 0;
+    margin: 64px 0 16px 0;
     font-size: 64px;
     font-family: cursive;
     color: #2D2A26;
@@ -112,27 +113,157 @@
         </tr>
         <tr>
           <td>#1</td>
-          <td>I Want to Eat Your Pancreas</td>
+          <td>
+            <div style="
+            padding: 0 0 0 100px;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            ">
+              <div style="
+              width: 100%;
+              ">
+                <img src="mov1.jpg" alt="Movie 1" style="
+                width: 100%;
+                aspect-ratio: 2/3;
+                object-fit: cover;
+                border-radius: 10px;
+                ">
+              </div>
+              <div style="
+              padding: 0 40px 0 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 36px;
+              ">
+                I Want to Eat Your Pancreas
+              </div>
+            </div>
+          </td>
           <td>October 29, 2019</td>
         </tr>
         <tr>
           <td>#2</td>
-          <td>The Loud House Movie</td>
+          <td>
+            <div style="
+            padding: 0 0 0 100px;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            ">
+              <div style="
+              width: 100%;
+              ">
+                <img src="mov2.jpg" alt="Movie 2" style="
+                width: 100%;
+                aspect-ratio: 2/3;
+                object-fit: cover;
+                border-radius: 10px;
+                ">
+              </div>
+              <div style="
+              padding: 0 40px 0 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 36px;
+              ">
+                The Loud House Movie
+              </div>
+            </div>
+          </td>
           <td>August 20, 2021</td>
         </tr>
         <tr>
           <td>#3</td>
-          <td>How To Make Millions Before Grandma Dies</td>
+          <td>
+            <div style="
+            padding: 0 0 0 100px;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            ">
+              <div style="
+              width: 100%;
+              ">
+                <img src="mov3.jpg" alt="Movie 3" style="
+                width: 100%;
+                aspect-ratio: 2/3;
+                object-fit: cover;
+                border-radius: 10px;
+                ">
+              </div>
+              <div style="
+              padding: 0 40px 0 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 36px;
+              ">
+                How To Make Millions Before Grandma Dies
+              </div>
+            </div>
+          </td>
           <td>April 4, 2024</td>
         </tr>
         <tr>
           <td>#4</td>
-          <td>Vince and Kath and James</td>
+          <td>
+            <div style="
+            padding: 0 0 0 100px;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            ">
+              <div style="
+              width: 100%;
+              ">
+                <img src="mov4.jpg" alt="Movie 4" style="
+                width: 100%;
+                aspect-ratio: 2/3;
+                object-fit: cover;
+                border-radius: 10px;
+                ">
+              </div>
+              <div style="
+              padding: 0 40px 0 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 36px;
+              ">
+                Vince and Kath and James
+              </div>
+            </div>
+          </td>
           <td>December 25, 2016</td>
         </tr>
         <tr>
           <td>#5</td>
-          <td>Girl, Boy, Bakla, Tomboy</td>
+          <td>
+            <div style="
+            padding: 0 0 0 100px;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            ">
+              <div style="
+              width: 100%;
+              ">
+                <img src="mov5.jpg" alt="Movie 5" style="
+                width: 100%;
+                aspect-ratio: 2/3;
+                object-fit: cover;
+                border-radius: 10px;
+                ">
+              </div>
+              <div style="
+              padding: 0 40px 0 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 36px;
+              ">
+                Girl, Boy, Bakla, Tomboy
+              </div>
+            </div>
+          </td>
           <td>December 25, 2013</td>
         </tr>
       </table>
