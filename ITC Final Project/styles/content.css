@@ -39,12 +39,13 @@ body {
 }
 
 .navigation > header {
-  position: absolute;
-  inset: 0 0 auto 0;
+  position: fixed;
+  inset: 0 80vw auto 0;
   height: 64px;
-  margin: 0 16px 0 5vw;
+  margin: 0 17px 0 5vw;
+  z-index: 100;
 
-  background-color: var(--bg-color);
+  background-color: var(--bg-nav-color);
   border-bottom: 0.8px solid var(--light-border-color);
 
   display: flex;
@@ -64,7 +65,7 @@ body {
 }
 
 .navigation > header > .logo-wrapper > .logo-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: var(--logo_font);
   color: var(--text-main);
 }
@@ -149,6 +150,10 @@ body {
   flex-direction: column;
 }
 
+.navigation > .division > details > summary > a {
+  color: var(--text-main);
+}
+
 .navigation > .division > details > .container > .hyperlink {
   width: 100%;
   padding: 8px 0 8px 16px;
@@ -163,14 +168,18 @@ body {
 }
 
 .navigation > .division > details[open] > summary,
-.navigation > .division > details[open] >  summary::after {
+.navigation > .division > details[open] > summary::after {
   color: var(--text-main);
 }
 
 .navigation > .division > .hyperlink:hover,
-.navigation > .division > details >  summary:hover,
-.navigation > .division > details >  summary:hover::after,
+.navigation > .division > details > summary:hover,
+.navigation > .division > details > summary:hover::after,
 .navigation > .division > details > .container > .hyperlink:hover {
+  color: var(--accent-color);
+}
+
+.navigation > .division > details > summary:hover > a {
   color: var(--accent-color);
 }
 
@@ -183,7 +192,8 @@ body {
 
 .content {
   position: relative;
-  padding: 64px 7vw 0 7vw;
+  margin: 64px 0 0 0;
+  padding: 0 7vw 0 7vw;
   overflow: hidden scroll;
 
   background-color: var(--bg-content-color);
@@ -198,11 +208,13 @@ body {
 }
 
 .content > header {
-  position: absolute;
-  inset: 0 0 auto 0;
+  position: fixed;
+  inset: 0 0 auto 20vw;
   height: 64px;
-  margin: 0 5vw 0 16px;
+  padding: 0 5vw 0 16px;
+  z-index: 100;
 
+  background-color: var(--bg-content-color);
   border-bottom: 0.8px solid var(--dark-border-color);
 
   display: flex;
@@ -351,6 +363,31 @@ body {
   color: var(--text-main2);
 }
 
+.content > .topic ol,
+.content > .topic ul,
+.content > .topic dl {
+  margin: 0 0 0 16px;
+
+  font-size: 1rem;
+  color: var(--text-main2);
+}
+
+.content > .topic ol li,
+.content > .topic ul li {
+  margin: 0 0 8px 0;
+  padding: 0 0 0 8px;
+
+  font-size: 1rem;
+  color: var(--text-main2);
+}
+
+.content > .topic dl dd {
+  padding: 0 0 0 32px;
+
+  font-size: 1rem;
+  color: var(--text-main2);
+}
+
 .content > .topic h2 {
   margin: 48px 0 16px 0;
   padding: 24px 0 0 0;
@@ -366,4 +403,31 @@ body {
   margin: 48px 0 64px 0;
 
   border-top: solid 0.8px var(--light-border-color);
+}
+
+.content > .topic > .genre-wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: flex-start;
+} 
+
+.content > .topic > .genre-wrapper .card {
+  padding: 6px 12px;
+  cursor: pointer;
+
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.content > .topic > .genre-wrapper .card:hover {
+  background-color: var(--accent-color);
+
+  color: var(--text-main);
 }
