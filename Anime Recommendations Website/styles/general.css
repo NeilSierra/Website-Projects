@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'AGRevueCyrRomanMedium';
+  src: url('fonts/AGRevueCyrRomanMedium/AGRevueCyrRomanMedium.woff2') format('woff2'),
+       url('fonts/AGRevueCyrRomanMedium/AGRevueCyrRomanMedium.woff') format('woff'),
+       url('fonts/AGRevueCyrRomanMedium/AGRevueCyrRomanMedium.ttf') format('truetype'),
+       url('fonts/AGRevueCyrRomanMedium/AGRevueCyrRomanMedium.svg') format('svg');
+}
+
+:root {
+  --logoFont: 'AGRevueCyrRomanMedium', cursive;
+  --headingFont: 'Roboto', helvetica;
+  --contentFont: 'Poppins', sans-serif;
+
+  --accent-color: #2E51A2;
+
+  /* Theme Colors: Dark Mode Default */
+
+  font-size: 16px;
+  color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  font-family: var(--contentFont);
+
+  transition: all 0.3s;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 64px 0 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
