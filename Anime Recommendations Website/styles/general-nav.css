@@ -25,6 +25,51 @@ nav {
   font-family: var(--logoFont);
 }
 
+.theme {
+  padding: 0 0 0 16px;
+  margin: 0 0 0 16px;
+
+  border-left: 1.5px solid var(--borderColor);
+
+  display: flex;
+  justify-self: right;
+  align-items: center;
+}
+
+.theme-button {
+  position: relative;
+  width: 22.85px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  cursor: pointer;
+
+  background-color: transparent;
+  border: none;
+
+  transition: all 0.2s;
+}
+
+.theme-button > .moon,
+.theme-button > .sun {
+  position: absolute;
+  inset: 50%;
+
+  width: 20px;
+  aspect-ratio: 1/1;
+  fill: var(--textSub);
+
+  transform: translate(-50%, -50%);
+}
+
+.theme-button > .sun {
+  opacity: 0;
+} 
+
+.theme-button:hover > .moon,
+.theme-button:hover > .sun {
+  fill: var(--textMain);
+}
+
 nav > .wrapper {
   display: flex;
   justify-self: right;
