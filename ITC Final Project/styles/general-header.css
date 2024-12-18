@@ -1,0 +1,115 @@
+header {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 64px;
+  padding: 0 5vw;
+
+  background-color: var(--navigation);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+header > .logo > span {
+  font-family: var(--font_logo);
+
+  transition: all 0.3s;
+}
+
+header > .logo > span:hover {
+  color: var(--accent1);
+}
+
+header > .wrapper {
+  height: 100%;
+  padding: 15px 0;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+header > .wrapper > .links,
+header > .wrapper > .theme,
+header > .wrapper > .socials {
+  padding: 0 0 0 16px;
+  margin: 0 0 0 16px;
+
+  border-left: 0.8px solid var(--border);
+
+  color: var(--text2);
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 16px;
+}
+
+header > .wrapper > .links {
+  border-left: none;
+}
+
+header > .wrapper > .links > a {
+  transition: all 0.3s;
+}
+
+header > .wrapper > .links > a:hover {
+  color: var(--accent1);
+}
+
+header .changeTheme {
+  position: relative;
+  height: 34px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+
+  background-color: transparent;
+  border: none;
+}
+
+header .changeTheme svg {
+  position: absolute;
+  inset: 50%;
+  width: 24px;
+  aspect-ratio: 1/1;
+
+  fill: var(--text2);
+
+  transform: translate(-50%, -50%);
+
+  transition: all 0.3s;
+}
+
+header .changeTheme .sun-icon {
+  opacity: 0;
+}
+
+header .changeTheme:hover svg {
+  fill: var(--accent1);
+}
+
+header > .wrapper > .socials > a {
+  padding: 6px 0;
+  width: 24px;
+  aspect-ratio: 1/1;
+
+  fill: var(--text2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.3s;
+}
+
+header > .wrapper > .socials > a:hover {
+  fill: var(--accent1);
+}

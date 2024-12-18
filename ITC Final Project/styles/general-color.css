@@ -1,0 +1,19 @@
+:root {
+  --accent1: #2E51A2;
+  --accent2: #16254c;
+
+  --navigation: #121213;
+  --sidebar: #161618;
+  --content1: #1B1B1F;
+  --content2: #202127;
+
+  --text1: #E0E0D8;
+  --text2: #9B9DA5;
+
+  --border: #2e2e32;
+
+  --scroll1: #686868;
+  --scroll2: #424242;
+
+  --theme: #000000;
+}

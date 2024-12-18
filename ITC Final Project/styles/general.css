@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('general-color.css');
+@import url('general-header.css');
 
 @font-face {
   font-family: 'AGRevueCyrRomanMedium';
@@ -9,26 +11,9 @@
 }
 
 :root {
-  --logoFont: 'AGRevueCyrRomanMedium', cursive;
-  --headingFont: 'Roboto', helvetica;
-  --contentFont: 'Poppins', sans-serif;
-
-  --accentColor: #2E51A2;
-  --accentColor2: #16254c;
-
-  /* Theme Colors: Dark Mode Default */
-  --navBG: #121213;
-  --sideBG: #161618;
-  --contentBG: #1B1B1F;
-  --subcontentBG: #202127;
-
-  --textMain: #E0E0D8;
-  --textSub: #9B9DA5;
-
-  --borderColor: #2e2e32;
-
-  --scroll-color1: #686868;
-  --scroll-color2: #424242;
+  --font_logo: 'AGRevueCyrRomanMedium', cursive;
+  --font_heading: 'Roboto', helvetica;
+  --font_content: 'Poppins', sans-serif;
 
   font-size: 16px;
 }
@@ -39,9 +24,9 @@
   box-sizing: border-box;
   text-decoration: none;
 
-  font-family: var(--contentFont);
-  color: var(--textMain);
-  scrollbar-color: var(--scroll-color1) var(--scroll-color2);
+  font-family: var(--font_content);
+  color: var(--text1);
+  scrollbar-color: var(--scroll1) var(--scroll2);
 }
 
 body {
@@ -49,7 +34,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   padding: 64px 0 0 0;
-  overflow-x: hidden;
+  overflow: hidden;
 
   background-color: var(--contentBG);
 
