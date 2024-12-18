@@ -1,0 +1,147 @@
+section {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 64px);
+  overflow: hidden;
+  
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+}
+
+section > .sidebar  {
+  width: 100%;
+  height: 100%;
+  overflow: hidden scroll;
+  padding: 0 16px 0 5vw;
+
+  background-color: var(--sideBG);
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.group {
+  width: 100%;
+  padding: 8px 0;
+
+  border-bottom: 0.8px solid var(--borderColor);
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.group > .title {
+  width: 100%;
+  padding: 8px 0;
+  font-weight: 600;
+}
+
+.group > a {
+  width: 100%;
+  padding: 8px 0;
+  cursor: pointer;
+
+  color: var(--textSub);
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  transition: all 0.1s;
+}
+
+.group details {
+  width: 100%;
+}
+
+.group summary {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  padding: 8px 0;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+}
+
+.group details > summary::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "▶";
+  margin: 0 0 0 auto;
+
+  color: var(--textSub);
+  font-size: 0.6rem;
+  font-weight: 500;
+
+  transform: translateY(-50%);
+
+  transition: all 0.1s;
+}
+
+.group details[open] > summary::after {
+  content: "▼";
+}
+
+.group summary > a {
+  width: 100%;
+  margin: 0 30px 0 0;
+  cursor: pointer;
+
+  color: var(--textSub);
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  transition: all 0.1s;
+}
+
+.group .wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.group .wrapper > a {
+  width: 100%;
+  padding: 8px 0 8px 16px;
+  cursor: pointer;
+
+  border-left: 0.8px solid var(--borderColor);
+
+  color: var(--textSub);
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  transition: all 0.1s;
+}
+
+.group > a:hover,
+.group details > summary:hover:after,
+.group summary:hover > a,
+.group .wrapper > a:hover {
+  color: var(--accentColor);
+}
+
+.group details[open] > summary::after,
+.group details[open] > summary > a {
+  color: var(--textMain);
+}
+
+section > .main-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden scroll;
+  padding: 0 5vw;
+
+  background-color: var(--contentBG);
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}

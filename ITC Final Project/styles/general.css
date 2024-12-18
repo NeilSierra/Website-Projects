@@ -9,14 +9,28 @@
 }
 
 :root {
-  --logo_font: 'AGRevueCyrRomanMedium', cursive;
-  --heading_font: 'Roboto', helvetica;
-  --text_font: 'Poppins', sans-serif;
+  --logoFont: 'AGRevueCyrRomanMedium', cursive;
+  --headingFont: 'Roboto', helvetica;
+  --contentFont: 'Poppins', sans-serif;
 
-  --accent-color: #2E51A2;
+  --accentColor: #2E51A2;
+  --accentColor2: #16254c;
+
+  /* Theme Colors: Dark Mode Default */
+  --navBG: #121213;
+  --sideBG: #161618;
+  --contentBG: #1B1B1F;
+  --subcontentBG: #202127;
+
+  --textMain: #E0E0D8;
+  --textSub: #9B9DA5;
+
+  --borderColor: #2e2e32;
+
+  --scroll-color1: #686868;
+  --scroll-color2: #424242;
 
   font-size: 16px;
-  color: #ffffff;
 }
 
 * {
@@ -25,5 +39,22 @@
   box-sizing: border-box;
   text-decoration: none;
 
-  font-family: var(--text_font);
+  font-family: var(--contentFont);
+  color: var(--textMain);
+  scrollbar-color: var(--scroll-color1) var(--scroll-color2);
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 64px 0 0 0;
+  overflow-x: hidden;
+
+  background-color: var(--contentBG);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
