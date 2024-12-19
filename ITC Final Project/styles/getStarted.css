@@ -151,7 +151,7 @@ section > .content > .background3 {
   position: absolute;
   inset: 0;
 
-  background-color: var(--theme);
+  background-color: #000000;
   opacity: 0.9;
 
   z-index: 3;
