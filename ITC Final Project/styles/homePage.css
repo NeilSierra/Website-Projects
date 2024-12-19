@@ -57,7 +57,7 @@ section > .content > .topic ul {
   padding: 20px 20px 20px 44px;
 
   background-color: var(--content2);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 section > .content > .topic ol li,
@@ -67,4 +67,32 @@ section > .content > .topic ul li {
   font-size: 1rem;
   line-height: 1.6rem;
   text-align: justify;
+}
+
+section > .content > .topic .genre-list {
+  margin: 8px 0;
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+section > .content > .topic .genre-list > .genre-card {
+  position: relative;
+  padding: 5px 15px;
+  cursor: pointer;
+
+  border: 2px solid var(--accent1);
+  border-radius: 10px;
+
+  color: var(--accent1);
+  font-weight: 600;
+}
+
+section > .content > .topic .genre-list > .genre-card:hover {
+  background-color: var(--accent1);
+
+  color: #FFFFFF;
 }
