@@ -7,17 +7,11 @@
     <link rel="shortcut icon" href="styles/images/icon.ico" type="image/x-icon"> <!-- Favicon Link -->
     <!-- Cascading Style Sheets -->
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/loadingScreen.css">
+    <link rel="stylesheet" href="styles/animeLayout.css">
     <link rel="stylesheet" href="styles/general-color.css">
     <!-- JavaScripts-->
     <script src="scripts/changingTitle.js"></script> <!-- Changes Title -->
     <script src="scripts/changeTheme.js"></script>
-    <!-- Redirect to Next Page-->
-     <script>
-      setTimeout(() => {
-        window.location.href = "homePage.html";
-      }, 5000)
-     </script>
   </head>
   <body>
     <header>
@@ -65,14 +59,34 @@
         </div>
       </div>
     </header>
-    <div class="spinner">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <div class="loading-text"></div>
+    <section>
+      <div class="anime-container">
+        <div class="anime-header">
+          <img src="styles/images/Manga/omniscientreadersviewpoint.jpg" alt="Anime Cover" class="anime-cover">
+          <div class="anime-info">
+            <h1 class="anime-title">Omniscient Reader's Viewpoint</h1>
+            <p class="anime-season">Manhwa</p>
+          </div>
+        </div>
+        <div class="anime-synopsis">
+          <h2>Synopsis</h2>
+          <p>
+            Kim Dokja does not consider himself the protagonist of his own life. Befitting the name his parents gave him, he is a solitary person whose sole hobby is reading web novels. For over a decade, he has lived vicariously through Yoo Joonghyuk, the main character of the web novel Three Ways to Survive the Apocalypse (TWSA). Through Joonghyuk, Dokja has experienced secondhand the trials of repeatedly regressing in time, in search of an end to life-threatening "scenarios" that force people to act out narratives for the amusement of god-like "Constellations."
+          </p>
+          <p>
+            After reading 3,149 chapters—long after all other readers lost interest—Dokja finally resigns himself to the story ending. However, he receives an enigmatic message from the author, stating that the story will soon be monetized, before his surroundings suddenly go dark. He swiftly realizes that fiction has become reality and he is now living through TWSA. Although he is the singular omniscient reader of the events yet to come, his success in the scenarios is not guaranteed—but perhaps his advantage will empower him to step into the protagonist role that never suited him before.
+          </p>
+        </div>
+        <div class="anime-background">
+          <h2>Background</h2>
+          <p>
+            Omniscient Reader's Viewpoint is originally a webtoon series which has been officially published in book format by A.Tempo Media (에이템포미디어) since December 29, 2020.
+          </p>
+          <p>
+            The series has been published digitally in English as Omniscient Reader by Webtoon Entertainment since August 19, 2020. The volumes have been published by Yen Press under the Ize Press imprint since December 12, 2023.
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

@@ -7,17 +7,11 @@
     <link rel="shortcut icon" href="styles/images/icon.ico" type="image/x-icon"> <!-- Favicon Link -->
     <!-- Cascading Style Sheets -->
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/loadingScreen.css">
+    <link rel="stylesheet" href="styles/animeLayout.css">
     <link rel="stylesheet" href="styles/general-color.css">
     <!-- JavaScripts-->
     <script src="scripts/changingTitle.js"></script> <!-- Changes Title -->
     <script src="scripts/changeTheme.js"></script>
-    <!-- Redirect to Next Page-->
-     <script>
-      setTimeout(() => {
-        window.location.href = "homePage.html";
-      }, 5000)
-     </script>
   </head>
   <body>
     <header>
@@ -65,14 +59,34 @@
         </div>
       </div>
     </header>
-    <div class="spinner">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <div class="loading-text"></div>
+    <section>
+      <div class="anime-container">
+        <div class="anime-header">
+          <img src="styles/images/Manga/bluelock.jpg" alt="Anime Cover" class="anime-cover">
+          <div class="anime-info">
+            <h1 class="anime-title">Blue Lock</h1>
+            <p class="anime-season">Manga</p>
+          </div>
+        </div>
+        <div class="anime-synopsis">
+          <h2>Synopsis</h2>
+          <p>
+            After reflecting on the current state of Japanese soccer, the Japanese Football Association decides to hire the enigmatic and eccentric coach Jinpachi Ego to achieve their dream of winning the World Cup. Believing that Japan has lacked an egoistic striker hungry for goals, Jinpachi initiates the Blue Lock—a prison-like facility where three hundred talented strikers from high schools all over Japan are isolated and pitted against each other. The sole survivor of Blue Lock will earn the right to become the national team's striker, and those who are defeated shall be banned from joining the team forever.
+          </p>
+          <p>
+            Selected to join this risky project is Yoichi Isagi, a striker who failed to bring his high school soccer team to the national tournament. After choosing to pass to a teammate who missed instead of scoring on his own, he could not help but wonder if the results would have been different had he been more selfish. Using this golden opportunity given by the Blue Lock Project, Yoichi aims to clear his doubts and chase his ultimate desire—to become the greatest striker in the world and lead Japan to World Cup glory.
+          </p>
+        </div>
+        <div class="anime-background">
+          <h2>Background</h2>
+          <p>
+            Blue Lock won the 45th Kodansha Manga Awards in the Shounen category in 2021.
+          </p>
+          <p>
+            The series has been published digitally in English by Kodansha Comics USA since March 16, 2021, and in print since June 21, 2022. The series has also been simulpub through K Manga. It has also been released in French by Pika Édition since June 2, 2021; in Italian by Panini Comics since July 29, 2021; and in Polish by Waneko since August 5, 2022.
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

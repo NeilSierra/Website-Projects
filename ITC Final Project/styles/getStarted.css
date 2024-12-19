@@ -41,19 +41,19 @@ section > .content > .background2 {
   background-image: url(images/Manga/bluelock.jpg);
 }
 .background1 > .bg-card:nth-child(3) {
-  background-image: url(images/Anime/Haikyuu/s1.jpg);
+  background-image: url(images/Anime/Haikyuu.jpg);
 }
 .background1 > .bg-card:nth-child(4) {
   background-image: url(images/Manga/hellsparadise.jpg);
 }
 .background1 > .bg-card:nth-child(5) {
-  background-image: url(images/Anime/Horimiya/s1.jpg);
+  background-image: url(images/Anime/Horimiya.jpg);
 }
 .background1 > .bg-card:nth-child(6) {
   background-image: url(images/Manga/mystmightmayhem.jpg);
 }
 .background1 > .bg-card:nth-child(7) {
-  background-image: url(images/Anime/Hyouka/s1.jpg);
+  background-image: url(images/Anime/Hyouka.jpg);
 }
 .background1 > .bg-card:nth-child(8) {
   background-image: url(images/Manga/omniscientreadersviewpoint.jpg);
@@ -66,7 +66,7 @@ section > .content > .background2 {
 }
 
 .background2 > .bg-card:nth-child(1) {
-  background-image: url(images/Anime/KonoSuba/s1.jpg);
+  background-image: url(images/Anime/KonoSuba.jpg);
 }
 .background2 > .bg-card:nth-child(2) {
   background-image: url(images/Manga/relife.jpg);
@@ -78,19 +78,19 @@ section > .content > .background2 {
   background-image: url(images/Manga/revengeofthebaskervillebloodhound.jpg);
 }
 .background2 > .bg-card:nth-child(5) {
-  background-image: url(images/Anime/OshiNoKo/s1.jpg);
+  background-image: url(images/Anime/OshiNoKo.jpg);
 }
 .background2 > .bg-card:nth-child(6) {
   background-image: url(images/Manga/sololeveling.jpg);
 }
 .background2 > .bg-card:nth-child(7) {
-  background-image: url(images/Anime/SpyxFamily/s1p1.jpg);
+  background-image: url(images/Anime/SpyxFamily.jpg);
 }
 .background2 > .bg-card:nth-child(8) {
   background-image: url(images/Manga/teenagemercenary.jpg);
 }
 .background2 > .bg-card:nth-child(9) {
-  background-image: url(images/Anime/Tensura/s1.jpg);
+  background-image: url(images/Anime/Tensura.jpg);
 }
 .background2 > .bg-card:nth-child(10) {
   background-image: url(images/Manga/theknightonlylivestoday.jpg);

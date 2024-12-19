@@ -22,6 +22,7 @@ section > .content {
 }
 
 section > .content > .topic {
+  width: 100%;
   padding: 0 0 32px 0;
 
   border-bottom: 0.8px solid var(--border);
@@ -51,6 +52,13 @@ section > .content > .topic p {
   text-align: justify;
 }
 
+section > .content > .topic p > a {
+  margin: 0 0 0 8px;
+
+  color: var(--accent1);
+  text-decoration: underline;
+}
+
 section > .content > .topic ol,
 section > .content > .topic ul {
   margin: 8px 0;
@@ -63,10 +71,19 @@ section > .content > .topic ul {
 section > .content > .topic ol li,
 section > .content > .topic ul li {
   padding: 0 0 0 8px;
+  margin: 0 0 8px 0;
 
   font-size: 1rem;
   line-height: 1.6rem;
   text-align: justify;
+}
+
+section > .content > .topic ol li > a,
+section > .content > .topic ul li > a {
+  margin: 0 0 0 8px;
+
+  color: var(--accent1);
+  text-decoration: underline;
 }
 
 section > .content > .topic .genre-list {
@@ -95,4 +112,57 @@ section > .content > .topic .genre-list > .genre-card:hover {
   background-color: var(--accent1);
 
   color: #FFFFFF;
+}
+
+section > .content > .topic .gallery-list {
+  margin: 8px 0;
+  padding: 16px;
+
+  background-color: var(--content2);
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+section > .content > .topic .gallery-list > .gallery-card {
+  position: relative;
+  height: 350px;
+  width: 255px;
+  overflow: hidden;
+  cursor: pointer;
+
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+section > .content > .topic .gallery-list > .gallery-card img {
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+  opacity: 0.3;
+
+  transition: all 0.3s;
+}
+
+section > .content > .topic .gallery-list > .gallery-card:hover img {
+  opacity: 1;
+}
+
+section > .content > .topic .gallery-list > .gallery-card span {
+  position: absolute;
+  inset: auto 10px 10px 10px;
+
+  font-weight: 600;
+  text-align: left;
+  font-size: 1rem;
+
+  transition: all 0.3s;
+}
+
+section > .content > .topic .gallery-list > .gallery-card:hover span {
+  opacity: 0;
 }

@@ -1,0 +1,79 @@
+section {
+  position: absolute;
+  inset: 64px 0 0 0;
+  padding: 40px 15vw 0 15vw;
+  overflow: hidden scroll;
+
+  background-color: var(--content2);
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.anime-container {
+  width: 100%;
+  background-color: var(--content1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding: 40px;
+  margin: 0 0 40px 0;
+}
+
+.anime-header {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.anime-cover {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.anime-info {
+  flex: 1;
+}
+
+.anime-title {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.anime-season {
+  margin: 8px 0 0 0;
+  padding: 16px 0 0 0;
+
+  border-top: 3px solid var(--border);
+
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--text2);
+}
+
+.anime-synopsis, .anime-background {
+  margin-bottom: 20px;
+}
+
+.anime-synopsis h2, .anime-background h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.anime-synopsis p, .anime-background p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--text2);
+}
+
+.anime-synopsis p, .anime-background p {
+  margin-bottom: 10px;
+}
