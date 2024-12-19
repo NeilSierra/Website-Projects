@@ -215,6 +215,7 @@ section .container > a:hover {
 section .container > a > span {
   font-size: 1.5rem;
   font-weight: 600;
+  color: #E0E0D8;
 
   transition: all 0.3s;
 }
