@@ -26,6 +26,8 @@
   font-family: var(--font_content);
   color: var(--text1);
   scrollbar-color: var(--scroll1) var(--scroll2);
+
+  scroll-behavior: smooth;
 }
 
 body {

@@ -10,7 +10,7 @@ section {
 }
 
 section > .content {
-  padding: 64px 5vw 0 5vw;
+  padding: 0 8vw;
   overflow: hidden scroll;
 
   background-color: var(--content1);
@@ -23,7 +23,48 @@ section > .content {
 
 section > .content > .topic {
   padding: 0 0 32px 0;
-  margin: 0 0 64px 0;
 
   border-bottom: 0.8px solid var(--border);
+}
+
+section > .content > .topic h1 {
+  margin: 0 0 32px 0;
+  padding: 64px 0 0 0;
+
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+section > .content > .topic h2 {
+  margin: 32px 0 16px 0;
+  padding: 32px 0 0 0;
+
+  border-top: 0.8px solid var(--border);
+
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+section > .content > .topic p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  text-align: justify;
+}
+
+section > .content > .topic ol,
+section > .content > .topic ul {
+  margin: 8px 0;
+  padding: 20px 20px 20px 44px;
+
+  background-color: var(--content2);
+  border-radius: 20px;
+}
+
+section > .content > .topic ol li,
+section > .content > .topic ul li {
+  padding: 0 0 0 8px;
+
+  font-size: 1rem;
+  line-height: 1.6rem;
+  text-align: justify;
 }
