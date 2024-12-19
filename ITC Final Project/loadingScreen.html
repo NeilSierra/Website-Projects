@@ -7,10 +7,16 @@
     <link rel="shortcut icon" href="styles/images/icon.ico" type="image/x-icon"> <!-- Favicon Link -->
     <!-- Cascading Style Sheets -->
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/getStarted.css">
+    <link rel="stylesheet" href="styles/loadingScreen.css">
     <!-- JavaScripts-->
     <script src="scripts/changing-title.js"></script> <!-- Changes Title -->
     <script src="scripts/change-theme.js"></script>
+    <!-- Redirect to Next Page-->
+     <script>
+      setTimeout(() => {
+        window.location.href = "homePage.html";
+      }, 5000)
+     </script>
   </head>
   <body>
     <header>
@@ -57,42 +63,14 @@
         </div>
       </div>
     </header>
-    <section>
-      <div class="content">
-        <div class="background1">
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-        </div>
-        <div class="background2">
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-          <div class="bg-card"></div>
-        </div>
-        <div class="background3"></div>
-        <div class="container">
-          <h1>Watch. Read. Enjoy.</h1>
-          <p>Explore exciting new worlds, experience unforgettable stories, and enjoy recommendations handpicked by the creator.</p>
-          <a href="loadingScreen.html">
-            <span>Explore Website</span>
-          </a>
-        </div>
-      </div>
-      <footer>Copyright © 2024 - Neil Sierra</footer>
-    </section>
+    <div class="spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="loading-text"></div>
   </body>
 </html>

@@ -1,0 +1,16 @@
+@import url('homePage-nav.css');
+
+section {
+  position: absolute;
+  inset: 64px 0 0 0;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 20vw 1fr;
+}
+
+section > .content {
+  overflow: hidden scroll;
+
+  background-color: var(--content1);
+}

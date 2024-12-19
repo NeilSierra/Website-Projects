@@ -1,0 +1,140 @@
+
+section > nav {
+  overflow: hidden scroll;
+  padding: 16px 16px 16px 5vw;
+
+  background-color: var(--sidebar);
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+section > nav > .group {
+  width: 100%;
+  padding: 0 0 16px 0;
+  margin: 0 0 16px 0;
+
+  border-bottom: 0.8px solid var(--border);
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+section > nav > .group > h1 {
+  width: 100%;
+  padding: 8px 0;
+
+  font-size: 1rem;
+  line-height: 1rem;
+  color: var(--text1);
+}
+
+
+section > nav > .group > a {
+  width: 100%;
+  padding: 8px 0;
+
+  color: var(--text2);
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  transition: all 0.3s;
+}
+
+section > nav > .group > a:hover {
+  color: var(--accent1);
+}
+
+section > nav > .group > details {
+  width: 100%;
+}
+
+section > nav > .group > details > summary {
+  position: relative;
+  width: 100%;
+  padding: 8px 32px 8px 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+section > nav > .group > details > summary::after {
+  position: absolute;
+  inset: 50% 8px auto auto;
+  content: "▶";
+
+  font-size: 0.7rem;
+  color: var(--text2);
+
+  transform: translateY(-50%);
+
+  transition: all 0.3s;
+}
+
+section > nav > .group > details[open] > summary::after {
+  color: var(--text1);
+}
+
+section > nav > .group > details > summary:hover::after {
+  color: var(--accent1);
+}
+
+section > nav > .group > details[open] > summary::after{
+  content: "▼";
+}
+
+section > nav > .group > details > summary > a {
+  color: var(--text2);
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  transition: all 0.3s;
+}
+
+section > nav > .group > details[open] > summary > a {
+  color: var(--text1);
+}
+
+section > nav > .group > details > summary:hover > a {
+  color: var(--accent1); 
+}
+
+section > nav > .group > details > .dropdown {
+  padding: 8px 0;
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+section > nav > .group > details > .dropdown > a {
+  width: 100%;
+  padding: 8px 0 8px 16px;
+  list-style: none;
+
+  border-left: 0.8px solid var(--border);
+
+  color: var(--text2);
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  transition: all 0.3s;
+}
+
+section > nav > .group > details > .dropdown > a:hover {
+  color: var(--accent1); 
+}
+
+section > nav > footer {
+  padding: 8px 0;
+
+  font-size: 0.7rem;
+  color: var(--text2);
+  font-weight: 600;
+
+  display: flex;
+}
