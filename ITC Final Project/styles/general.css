@@ -28,6 +28,8 @@
   scrollbar-color: var(--scroll1) var(--scroll2);
 
   scroll-behavior: smooth;
+
+  transition: background 0.3s, color 0.3s, fill 0.3s, scrollbar-color 0.3s, border 0.3s;
 }
 
 body {
