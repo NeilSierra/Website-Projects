@@ -1,0 +1,142 @@
+/*Import Font: 'Fredoka'*/
+/*Import Font: 'Coiny'*/
+/*Import Font: 'Poppins'*/
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* { /*Apply to all elements properties*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*For easier sizing and formatting*/
+}
+
+/*
+    BODY CSS
+*/
+body {
+  position: relative; /*Allows element to stick to it*/
+  height: 100vh; /*Occupy full screen vertically*/
+  width: 100vw; /*Occupy full screen horizontally*/
+  padding: 100px 0 0 0;
+  overflow: hidden;
+  border: 8px solid #704021; 
+  background-color: #e3e2de; 
+  display: flex; /*How the body will handle its content*/
+  flex-direction: column; /*Contents are arranged vertically*/
+}
+
+/*
+    NAVIGATION BAR CSS
+*/
+.navbar {
+  position: absolute;
+  inset: 0 0 auto 0; /*Occupy the horizontal space*/
+  height: 100px;
+  padding: 0 4vw; /*Side padding that is responsive to the screen size*/
+  border-bottom: 2px solid #704021;
+  background-color: #e3e2de;
+  display: flex;
+  justify-content: center; /*Contents are arranged horizontally*/
+  align-items: center; /*Contents are centered*/
+  gap: 120px; /*Gap of contents to each other*/
+}
+
+.navbar .logo-wrap {
+  position: absolute; /*Sticks to the parent element*/
+  inset: auto auto auto 4vw; /*Position of the element*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .logo {
+  height: 75px;
+  object-fit: cover;
+}
+
+.navbar .pagelink {
+  padding: 10px;
+  font-size: 1.3rem;
+  font-family: 'Coiny';
+  text-decoration: none; /*Removes the underline*/
+  color: #914c2a;
+}
+
+.navbar .pagelink:hover { /*Hover properties of the element*/
+  text-decoration: underline; /*Adds the underline*/
+}
+
+/*
+    BANNER CONTENT CSS
+*/
+.banner-section {
+  position: relative; 
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start; /*Contents are alinged in left side*/
+  flex-direction: column;
+  gap: 70px;
+}
+
+.banner-section .banner-title {
+  position: relative;
+  margin: 0 0 0 6vw;
+  font-size: 8rem;
+  line-height: 8rem;
+  font-family: 'Fredoka';
+  font-weight: 650;
+}
+
+.banner-section .banner-title > .color-01 {
+  color: #4a3b2b;
+}
+
+.banner-section .banner-title > .color-02 {
+  color: #8d4322;
+}
+
+.banner-section .banner-title::after { /*Additional property of the element*/
+  content: ''; /*Required for the property to work*/
+  position: absolute;
+  inset: auto 40% -20px 0;
+  height: 2px;
+  background-color: #8d4322;
+}
+
+.banner-section .get-started-button-wrap {
+  margin: 0 0 0 6vw;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-section .get-started-button {
+  cursor: pointer;
+  padding: 20px 40px 15px 40px;
+  background-color: #e3e2de;
+  border: 2px solid #704021;
+  font-family: 'Coiny';
+  font-size: 1.5rem;
+  line-height: 1.4rem;
+  color: #914c2a;
+  font-weight: 400;
+  transition: all 0.3s; /*For smooth transition effects*/
+}
+
+.banner-section .get-started-button:hover {
+  background-color: #704021;
+  color: #e3e2de;
+}
+
+.banner-section .banner-image {
+  position: absolute;
+  inset: auto 20px auto auto;
+  width: 50%;
+}
+
+.gallery-card {
+  width: 100%;
+}
