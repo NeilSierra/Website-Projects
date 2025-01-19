@@ -1,0 +1,75 @@
+body { /*Reformats the body to only take the vertical size of the screen*/
+  height: 100vh;
+}
+
+.navbar .donate-button {
+  display: none;
+}
+
+.banner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0 6vw;
+  display: flex;
+  justify-content: center;
+  align-content: start;
+  flex-direction: column;
+}
+
+.banner-title {
+  position: relative;
+  width: fit-content;
+  margin: 0 0 40px 0;
+  font-size: 6rem;
+  line-height: 6rem;
+  font-family: 'Fredoka';
+  font-weight: 650;
+}
+
+.banner-title > .line-01 {
+  color: #4a3b2b;
+}
+
+.banner-title > .line-02 {
+  color: #8d4322;
+}
+
+.banner-title::after {
+  content: '';
+  position: absolute;
+  inset: auto 40% -20px 0;
+  height: 2px;
+  background-color: #8d4322;
+}
+
+.banner-caption {
+  margin: 0 0 20px 0;
+  font-size: 1.3rem;
+  font-family: 'Poppins';
+  color: #4a3b2b;
+}
+
+.banner .get-started-button {
+  width: fit-content;
+  padding: 10px 50px;
+  background-color: #e3e2de;
+  border: 2px solid #704021;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Fredoka';
+  color: #914c2a;
+  transition: all 0.2s;
+}
+
+.banner .get-started-button:hover {
+  background-color: #704021;
+  color: #e3e2de;
+}
+
+.banner-image {
+  position: absolute;
+  inset: auto 20px auto auto;
+  margin: 0 0 70px 0;
+  height: 40rem;
+}

@@ -1,0 +1,97 @@
+/*Imports Fonts: 'Fredoka', 'Coiny', 'Poppins'*/
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* { /*Applies to all elements in the website*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.5) #704021;
+}
+
+body { /*Vertical format of the body*/
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden auto;
+  padding: 108px 8px 8px 8px;
+  display: flex;
+  justify-content: start;
+  align-content: start;
+  flex-direction: column;
+}
+
+body::before { /*Border and background of the body*/
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #e3e2de; 
+  border: 8px solid #704021; 
+  z-index: -1;
+}
+
+.navbar {
+  position: absolute;
+  inset: 8px 8px auto 8px;
+  height: 100px;
+  padding: 0 4vw;
+  background-color: #e3e2de;
+  border-bottom: 2px solid #8d4322; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.navbar-pagelink {
+  font-size: 1.3rem;
+  font-family: 'Coiny';
+  color: #914c2a;
+}
+
+.navbar-pagelink:hover {
+  text-decoration: underline;
+  transform: scale(1.03);
+}
+
+.navbar-logo-wrap {
+  position: absolute;
+  inset: auto auto auto 4vw;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.navbar-logo {
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar .donate-button {
+  position: absolute;
+  inset: auto 4vw auto auto;
+  padding: 15px 10px 10px 10px;
+  background-image: url(backgrounds/shape-bone.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 1.3rem;
+  font-family: 'Coiny';
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.navbar-logo-wrap:hover,
+.navbar .donate-button:hover {
+  transform: scale(1.05);
+}
