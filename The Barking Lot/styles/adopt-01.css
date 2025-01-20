@@ -1,7 +1,7 @@
 .form {
-  margin: 50px 10vw;
-  padding: 50px 6vw;
-  width: calc(100% - 20vw);
+  margin: 50px 16vw;
+  padding: 50px 3vw;
+  width: calc(100% - 32vw);
   background-color: #efe9cc;
   border: 8px solid #914c2a;
   display: flex;
@@ -11,9 +11,9 @@
 }
 
 .form-title {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: 'Fredoka';
   color: #4a3b2b;
 }
@@ -27,7 +27,7 @@
 
 .form-label {
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   font-family: 'Fredoka';
 }
@@ -53,7 +53,7 @@
   padding: 10px 20px;
   border: 3px solid #4a3b2b;
   border-radius: 10px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: 'Poppins';
 }
 
@@ -61,7 +61,7 @@
 .input-address::placeholder,
 .input-phone::placeholder,
 .input-email::placeholder {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: 'Poppins';
   color: #737373;
 }
@@ -88,7 +88,7 @@
   padding: 10px 20px;
   border: 3px solid #4a3b2b;
   border-radius: 10px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: 'Poppins';
   color: #737373;
 }
@@ -98,7 +98,7 @@
   padding: 5px 100px;
   background-color: #4a3b2b;
   border-radius: 30px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   font-family: 'Fredoka';
   color: #ffffff;

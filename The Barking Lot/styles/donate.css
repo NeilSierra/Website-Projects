@@ -1,9 +1,9 @@
 .form {
-  margin: 50px 13vw 150px 13vw;
-  padding: 50px 6vw;
-  width: calc(100% - 26vw);
+  margin: 50px 24vw 150px 24vw;
+  padding: 50px 4vw;
+  width: calc(100% - 48vw);
   background-color: #efe9cc;
-  border: 8px solid #914c2a;
+  border: 12px solid #914c2a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
 .form-title {
   margin: 0 0 20px 0;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 600;
   font-family: 'Fredoka';
   color: #4a3b2b;
@@ -37,7 +37,7 @@
 
 .form-label {
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   font-family: 'Fredoka';
 }
@@ -62,14 +62,14 @@
   padding: 10px 20px;
   border: 3px solid #4a3b2b;
   border-radius: 10px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: 'Poppins';
 }
 
 .input-name::placeholder,
 .input-phone::placeholder,
 .input-email::placeholder {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: 'Poppins';
   color: #737373;
 }
@@ -80,12 +80,12 @@
   padding: 10px 20px;
   border: 3px solid #4a3b2b;
   border-radius: 10px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: 'Poppins';
 }
 
 .input-confirm::placeholder {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: 'Poppins';
   color: #737373;
 }
@@ -96,11 +96,12 @@
 }
 
 .confirm-button {
-  padding: 5px 100px;
+  cursor: pointer;
+  padding: 5px 70px;
   background-color: #efe9cc;
   border: 3px solid #8d4322;
   border-radius: 40px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   font-family: 'Fredoka';
   color: #8d4322;

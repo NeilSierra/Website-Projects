@@ -12,7 +12,8 @@ body { /*Reformats the body to only take the vertical size of the screen*/
 
 .thank-you-box {
   width: 70%;
-  padding: 50px 0;
+  padding: 25px 0;
+  margin: 0 0 100px;
   background-color: #efe9cc;
   border: 8px solid #914c2a;
   display: flex;
@@ -24,18 +25,18 @@ body { /*Reformats the body to only take the vertical size of the screen*/
 .heading {
   margin: 0 0 10px 0;
   width: fit-content;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   font-family: 'Fredoka';
   color: #704021;
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .heading > .shape-paw {
-  width: 7rem;
+  width: 4rem;
   object-fit: cover;
 }
 

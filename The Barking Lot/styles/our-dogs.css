@@ -7,9 +7,9 @@
 /*INTRODUCTION SECTION*/
 
 .introduction {
-  height: calc(100vh - 108px);
+  position: relative;
   width: 100%;
-  padding: 0 6vw;
+  padding: 100px 6vw;
   background-color: #efe9cc;
   display: flex;
   justify-content: center;
@@ -52,6 +52,13 @@
 
 .introduction-button:active {
   transform: scale(1);
+}
+
+.design-dog-01 {
+  position: absolute;
+  height: 25rem;
+  inset: auto 50px -40px auto;
+  z-index: 100;
 }
 
 
