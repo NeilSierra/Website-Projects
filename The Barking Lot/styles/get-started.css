@@ -6,6 +6,36 @@ body { /*Reformats the body to only take the vertical size of the screen*/
   display: none;
 }
 
+audio {
+  display: none;
+}
+
+.play-audio-button {
+  position: fixed;
+  inset: auto 40px 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.play-audio-button:hover{
+  transform: scale(1.1);
+}
+
+.play-audio-button:active{
+  transform: scale(1);
+}
+
+.play-audio-icon {
+  width: 3.5rem;
+  aspect-ratio: 1/1;
+}
+
+
+
+/*BANNER SECTION*/
+
 .banner {
   position: relative;
   height: 100%;
