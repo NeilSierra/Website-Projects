@@ -1,0 +1,167 @@
+.title {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  font-family: 'Fredoka';
+  color: #704021;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  padding: 50px 20vw;
+  background-color: #efe9cc;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.paragraph {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Poppins';
+  color: #704021;
+}
+
+.tagline {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: 'Poppins';
+  color: #704021;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tagline > .shape-paw {
+  width: 1.2rem;
+  object-fit: cover;
+}
+
+.out-content {
+  width: 100%;
+  padding: 50px 20vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.out-logo {
+  width: 15%;
+  align-self: center;
+}
+
+.content-grid {
+  width: 100%;
+  padding: 100px 6vw 50px 6vw;
+  background-color: #efe9cc;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.grid-title {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #4a3b2b;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-title > span {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #efe9cc;
+}
+
+.shape-paw-dark {
+  position: absolute;
+  width: 5rem;
+  aspect-ratio: 1/1;
+  inset: auto auto 67% auto;
+  z-index: 1;
+}
+
+.grid-card {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(74, 59, 43, 0.5);
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #efe9cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.grid-card:hover {
+  background-color: rgba(74, 59, 43, 0.75);
+  transform: scale(1.05);
+}
+
+.design-dog-01 {
+  position: absolute;
+  height: 18rem;
+  inset: 100% 20px auto auto;
+  z-index: 100;
+}
+
+.design-dog-02 {
+  position: absolute;
+  height: 15rem;
+  inset: 70% auto auto 20px;
+  z-index: 100;
+}
+
+.design-dog-03 {
+  position: absolute;
+  height: 10rem;
+  inset: auto 20px 20px auto;
+  z-index: 100;
+}
+
+.design-text-01 {
+  position: absolute;
+  inset: 20% 30px auto auto;
+  font-size: 2rem;
+  font-family: 'Coiny';
+  color: #704021;
+  transform: rotate(10deg);
+}
+
+.design-text-02 {
+  position: absolute;
+  inset: auto auto 20% 30px;
+  font-size: 2rem;
+  font-family: 'Coiny';
+  color: #704021;
+  transform: rotate(-10deg);
+}

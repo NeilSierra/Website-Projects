@@ -1,0 +1,76 @@
+body { /*Reformats the body to only take the vertical size of the screen*/
+  height: 100vh;
+}
+
+.section-wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you-box {
+  width: 70%;
+  padding: 50px 0;
+  background-color: #efe9cc;
+  border: 8px solid #914c2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  margin: 0 0 10px 0;
+  width: fit-content;
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: 'Fredoka';
+  color: #704021;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.heading > .shape-paw {
+  width: 7rem;
+  object-fit: cover;
+}
+
+.subheading {
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Fredoka';
+  color: #4a3b2b;
+}
+
+.content {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Poppins';
+  font-style: italic;
+}
+
+.redirect-button {
+  padding: 5px 40px;
+  background-color: #4a3b2b;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Fredoka';
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.redirect-button:hover {
+  transform: scale(1.05);
+}
+
+.redirect-button:active {
+  transform: scale(1);
+}
