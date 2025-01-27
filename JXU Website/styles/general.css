@@ -27,11 +27,25 @@
 }
 
 body {
+  position: relative;
   min-height: 100vh;
   width: 100vw;
   overflow: hidden auto;
   display: flex;
   flex-direction: column;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url(backgrounds/background-logo.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.1;
+  z-index: -1;
 }
 
 section {
@@ -50,6 +64,7 @@ header {
   width: 100%;
   padding: 0 4vw;
   background-color: #ffffff;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,21 +169,16 @@ footer .content .icon {
     font-size: 24px;
   }
 
-  header {
-    height: 120px;
-  }
-  header .logo-image {
-    width: 100px;
-  }
+  header .logo-name,
   header .pagelink {
-    font-size: 0.83rem;
+    font-size: 0.67rem;
   }
 
   footer .content {
-    font-size: 0.83rem;
+    font-size: 0.5rem;
   }
   footer .content .icon {
-    width: 0.83rem;
+    width: 0.5rem;
   }
 }
 
@@ -252,7 +262,7 @@ footer .content .icon {
   }
 }
 
-@media (min-width: 320px) and (max-width: 479px) {
+@media (max-width: 479px) {
   :root{
     font-size: 10px;
   }

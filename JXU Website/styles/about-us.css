@@ -1,0 +1,70 @@
+section.about-us {
+  min-height: calc(100vh - 100px);
+  padding: 50px 8vw;
+}
+
+section.about-us .title {
+  width: 100%;
+  margin: 0 0 40px 0;
+  filter: drop-shadow(0 4px 4px  rgba(0, 0, 0, 0.25));
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent_02);
+}
+
+section.about-us .body {
+  width: 100%;
+  margin: 0 0 40px 0;
+  text-align: justify;
+  text-indent: 40px;
+  font-size: 1rem;
+  color: var(--font_01);
+}
+
+section.about-us .body:last-child {
+  margin: 0;
+}
+
+@media (min-width: 1440px) {
+  section.about-us .title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  section.about-us {
+    min-height: calc(100vh - 160px);
+  }
+  section.about-us .title {
+    font-size: 2.571rem;
+  }
+  section.about-us .body {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  section.about-us {
+    min-height: calc(100vh - 140px);
+  }
+  section.about-us .title {
+    font-size: 2.66rem;
+  }
+  section.about-us .body {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 479px) {
+  section.about-us {
+    min-height: calc(100vh - 110px);
+  }
+  section.about-us .title {
+    font-size: 2.4rem;
+  }
+  section.about-us .body {
+    margin: 0 0 20px 0;
+  }
+}
